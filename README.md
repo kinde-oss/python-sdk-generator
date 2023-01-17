@@ -17,7 +17,7 @@ cd python-sdk-generator
 ---
 To generate SDK please run:
 ```
-openapi-generator-cli generate -g python-prior -i https://kinde.com/api/kinde-mgmt-api-specs.yaml --additional-properties=packageName=kinde_sdk -c config.yaml -o output
+_JAVA_OPTIONS="--add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED"  openapi-generator-cli generate -g python  -i https://kinde.com/api/kinde-mgmt-api-specs.yaml  --additional-properties=packageName=kinde_sdk -c config.yaml -o ../kinde-python-sdk/ --skip-validate-spec
 ```
 ---
 Folder `output` contains our final SDK after build.
