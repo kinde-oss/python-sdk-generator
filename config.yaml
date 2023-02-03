@@ -1,0 +1,14 @@
+generateSourceCodeOnly: true
+templateDir: my_custom_templates
+files:
+   README.md: { }
+   requirements.txt: { }
+   .pre-commit-config.yaml: { }
+   kinde_api_client.py:
+     destinationFilename: kinde_sdk/kinde_api_client.py
+   exceptions.py:
+     destinationFilename: kinde_sdk/exceptions.py
+   test_kinde_api_client.py:
+     destinationFilename: kinde_sdk/test/test_kinde_api_client.py
+   ci.yml:
+     destinationFilename: .github/workflows/ci.yml
