@@ -2,8 +2,11 @@ generateSourceCodeOnly: true
 templateDir: my_custom_templates
 files:
    README.md: { }
+   LICENSE: { }
    requirements.txt: { }
+   .gitignore: { }
    .pre-commit-config.yaml: { }
+   pyproject.toml: { }
    kinde_api_client.py:
      destinationFilename: kinde_sdk/kinde_api_client.py
    exceptions.py:
