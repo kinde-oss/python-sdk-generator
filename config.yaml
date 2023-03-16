@@ -9,8 +9,9 @@ files:
    pyproject.toml: { }
    kinde_api_client.py:
      destinationFilename: kinde_sdk/kinde_api_client.py
-   exceptions.py:
+   kinde_exceptions.mustache:
      destinationFilename: kinde_sdk/exceptions.py
+     templateType: SupportingFiles
    test_kinde_api_client.py:
      destinationFilename: kinde_sdk/test/test_kinde_api_client.py
    ci.yml:
