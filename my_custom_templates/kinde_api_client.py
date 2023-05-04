@@ -10,7 +10,7 @@ from kinde_sdk.exceptions import (
     KindeTokenException,
     KindeRetrieveException,
 )
-from kinde_sdk import __version__
+from kinde_sdk import __version__ as kinde_sdk_version
 
 
 class FlagType(Enum):
@@ -236,7 +236,7 @@ class KindeApiClient(ApiClient):
             self.token_endpoint,
             headers={
                 "Content-Type": "application/x-www-form-urlencoded",
-                "Kinde-SDK": "/".join(("Python", __version__)),
+                "Kinde-SDK": "/".join(("Python", kinde_sdk_version)),
             },
             **params,
         )
@@ -263,7 +263,7 @@ class KindeApiClient(ApiClient):
                 self.token_endpoint,
                 headers={
                     "Content-Type": "application/x-www-form-urlencoded",
-                    "Kinde-SDK": "/".join(("Python", __version__)),
+                    "Kinde-SDK": "/".join(("Python", kinde_sdk_version)),
                 },
                 refresh_token=refresh_token,
             )
