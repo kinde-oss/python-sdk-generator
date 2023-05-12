@@ -16,3 +16,98 @@ files:
      destinationFilename: kinde_sdk/test/test_kinde_api_client.py
    ci.yml:
      destinationFilename: .github/workflows/ci.yml
+   test/test_models/test_add_organization_users_response.py:
+     destinationFilename: kinde_sdk/test_models/test_add_organization_users_response.py
+   test/test_models/test_api_result.py:
+     destinationFilename: kinde_sdk/test_models/test_api_result.py
+   test/test_models/test_connected_apps_access_token.py:
+     destinationFilename: kinde_sdk/test_models/test_connected_apps_access_token.py
+   test/test_models/test_connected_apps_auth_url.py:
+     destinationFilename: kinde_sdk/test_models/test_connected_apps_auth_url.py
+   test/test_models/test_create_user_response.py:
+     destinationFilename: kinde_sdk/test_models/test_create_user_response.py
+   test/test_models/test_error_response.py:
+     destinationFilename: kinde_sdk/test_models/test_error_response.py
+   test/test_models/test_error.py:
+     destinationFilename: kinde_sdk/test_models/test_error.py
+   test/test_models/test_get_organizations_response.py:
+     destinationFilename: kinde_sdk/test_models/test_get_organizations_response.py
+   test/test_models/test_get_organizations_users_response.py:
+     destinationFilename: kinde_sdk/test_models/test_get_organizations_users_response.py
+   test/test_models/test_organization_user.py:
+     destinationFilename: kinde_sdk/test_models/test_organization_user.py
+   test/test_models/test_organization_users.py:
+     destinationFilename: kinde_sdk/test_models/test_organization_users.py
+   test/test_models/test_organization.py:
+     destinationFilename: kinde_sdk/test_models/test_organization.py
+   test/test_models/test_organizations.py:
+     destinationFilename: kinde_sdk/test_models/test_organizations.py
+   test/test_models/test_remove_organization_users_response.py:
+     destinationFilename: kinde_sdk/test_models/test_remove_organization_users_response.py
+   test/test_models/test_success_response.py:
+     destinationFilename: kinde_sdk/test_models/test_success_response.py
+   test/test_models/test_user_identity.py:
+     destinationFilename: kinde_sdk/test_models/test_user_identity.py
+   test/test_models/test_user_profile_v2.py:
+     destinationFilename: kinde_sdk/test_models/test_user_profile_v2.py
+   test/test_models/test_user_profile.py:
+     destinationFilename: kinde_sdk/test_models/test_user_profile.py
+   test/test_models/test_user.py:
+     destinationFilename: kinde_sdk/test_models/test_user.py
+   test/test_models/test_users_response.py:
+     destinationFilename: kinde_sdk/test_models/test_users_response.py
+   test/test_models/test_users.py:
+     destinationFilename: kinde_sdk/test_models/test_users.py
+   test/test_paths/__init__.py:
+     destinationFilename: test/test_paths/__init__.py
+   test/test_paths/test_api_v1_connected_apps_auth_url/test_get.py:
+     destinationFilename: test/test_paths/test_api_v1_connected_apps_auth_url/test_get.py
+   test/test_paths/test_api_v1_connected_apps_revoke/test_post.py:
+     destinationFilename: test/test_paths/test_api_v1_connected_apps_revoke/test_post.py
+   test/test_paths/test_api_v1_connected_apps_token/test_get.py:
+     destinationFilename: test/test_paths/test_api_v1_connected_apps_token/test_get.py
+   test/test_paths/test_api_v1_environment_feature_flags_/test_delete.py:
+     destinationFilename: test/test_paths/test_api_v1_environment_feature_flags_/test_delete.py
+   test/test_paths/test_api_v1_environment_feature_flags_feature_flag_key/test_delete.py:
+     destinationFilename: test/test_paths/test_api_v1_environment_feature_flags_feature_flag_key/test_delete.py
+   test/test_paths/test_api_v1_environment_feature_flags_feature_flag_key/test_patch.py:
+     destinationFilename: test/test_paths/test_api_v1_environment_feature_flags_feature_flag_key/test_patch.py
+   test/test_paths/test_api_v1_feature_flags/test_post.py:
+     destinationFilename: test/test_paths/test_api_v1_feature_flags/test_post.py
+   test/test_paths/test_api_v1_feature_flags_feature_flag_key/test_delete.py:
+     destinationFilename: test/test_paths/test_api_v1_feature_flags_feature_flag_key/test_delete.py
+   test/test_paths/test_api_v1_feature_flags_feature_flag_key/test_put.py:
+     destinationFilename: test/test_paths/test_api_v1_feature_flags_feature_flag_key/test_put.py
+   test/test_paths/test_api_v1_organization/test_get.py:
+     destinationFilename: test/test_paths/test_api_v1_organization/test_get.py
+   test/test_paths/test_api_v1_organization/test_post.py:
+     destinationFilename: test/test_paths/test_api_v1_organization/test_post.py
+   test/test_paths/test_api_v1_organization_users/test_post.py:
+     destinationFilename: test/test_paths/test_api_v1_organization_users/test_post.py
+   test/test_paths/test_api_v1_organization_users/test_get.py:
+     destinationFilename: test/test_paths/test_api_v1_organization_users/test_get.py
+   test/test_paths/test_api_v1_organization_users/test_patch.py:
+     destinationFilename: test/test_paths/test_api_v1_organization_users/test_patch.py
+   test/test_paths/test_api_v1_organizations/test_get.py:
+     destinationFilename: test/test_paths/test_api_v1_organizations/test_get.py
+   test/test_paths/test_api_v1_organizations_org_code_feature_flags/test_delete.py:
+     destinationFilename: test/test_paths/test_api_v1_organizations_org_code_feature_flags/test_delete.py
+   test/test_paths/test_api_v1_organizations_org_code_feature_flags_feature_flag_key/test_delete.py:
+     destinationFilename: test/test_paths/test_api_v1_organizations_org_code_feature_flags_feature_flag_key/test_delete.py
+   test/test_paths/test_api_v1_organizations_org_code_feature_flags_feature_flag_key/test_patch.py:
+     destinationFilename: test/test_paths/test_api_v1_organizations_org_code_feature_flags_feature_flag_key/test_patch.py
+   test/test_paths/test_api_v1_user/test_delete.py:
+     destinationFilename: test/test_paths/test_api_v1_user/test_delete.py
+   test/test_paths/test_api_v1_user/test_get.py:
+     destinationFilename: test/test_paths/test_api_v1_user/test_get.py
+   test/test_paths/test_api_v1_user/test_patch.py:
+     destinationFilename: test/test_paths/test_api_v1_user/test_patch.py
+   test/test_paths/test_api_v1_user/test_post.py:
+     destinationFilename: test/test_paths/test_api_v1_user/test_post.py
+   test/test_paths/test_api_v1_users/test_get.py:
+     destinationFilename: test/test_paths/test_api_v1_users/test_get.py
+   test/test_paths/test_oauth2_user_profile/test_get.py:
+     destinationFilename: test/test_paths/test_oauth2_user_profile/test_get.py
+   test/test_paths/test_oauth2_v2_user_profile/test_get.py:
+     destinationFilename: test/test_paths/test_oauth2_v2_user_profile/test_get.py
+   
