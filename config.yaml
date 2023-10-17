@@ -34,18 +34,14 @@ files:
      destinationFilename: kinde_sdk/test/test_models/test_error.py
    test/test_models/test_get_organizations_response.py:
      destinationFilename: kinde_sdk/test/test_models/test_get_organizations_response.py
-   test/test_models/test_get_organizations_users_response.py:
-     destinationFilename: kinde_sdk/test/test_models/test_get_organizations_users_response.py
+   test/test_models/test_get_organization_users_response.py:
+     destinationFilename: kinde_sdk/test/test_models/test_get_organization_users_response.py
    test/test_models/test_organization_user.py:
      destinationFilename: kinde_sdk/test/test_models/test_organization_user.py
    test/test_models/test_organization_users.py:
      destinationFilename: kinde_sdk/test/test_models/test_organization_users.py
    test/test_models/test_organization.py:
      destinationFilename: kinde_sdk/test/test_models/test_organization.py
-   test/test_models/test_organizations.py:
-     destinationFilename: kinde_sdk/test/test_models/test_organizations.py
-   test/test_models/test_remove_organization_users_response.py:
-     destinationFilename: kinde_sdk/test/test_models/test_remove_organization_users_response.py
    test/test_models/test_success_response.py:
      destinationFilename: kinde_sdk/test/test_models/test_success_response.py
    test/test_models/test_user_identity.py:
