@@ -3,6 +3,7 @@ from typing import Any, Dict, List, Optional
 from urllib.parse import urlencode, urlparse, parse_qs, urlunparse
 
 import jwt
+from jwt import PyJWKClient
 from authlib.integrations.requests_client import OAuth2Session
 from kinde_sdk.api_client import ApiClient
 from kinde_sdk.exceptions import (
@@ -99,6 +100,11 @@ class KindeApiClient(ApiClient):
 
         self.registration_url = f"{self.login_url}&start_page=registration"
         self.create_org_url = f"{self.registration_url}&is_create_org=true"
+        self.jwks_client = PyJWKClient(
+            uri=f"{self.domain}/.well-known/jwks.json",
+            cache_keys=True,
+        )
+
 
     def get_login_url(self, additional_params: Optional[Dict[str, str]] = None) -> str:
         if additional_params:
@@ -220,10 +226,20 @@ class KindeApiClient(ApiClient):
                 )
             token = self.__access_token_obj.get(token_name)
 
+            signing_key = self.jwks_client.get_signing_key_from_jwt(token)
+
             if token:
-                self.__decoded_tokens[token_name] = jwt.decode(
-                    token, options={"verify_signature": False}
-                )
+                decode_token_params = {
+                    "jwt":token,
+                    "key": signing_key.key,
+                    "algorithms":["RS256"],
+                    "options":{
+                        "verify_signature": True,
+                        "verify_exp": True,
+                        "verify_aud": False
+                    }
+                }
+                self.__decoded_tokens[token_name] = jwt.decode(**decode_token_params)
             else:
                 raise KindeTokenException(f"Token {token_name} doesn't exist.")
 
