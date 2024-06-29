@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch, MagicMock
-from kinde_sdk.kinde_api_client import KindeApiClient, GrantType, KindeConfigurationException, KindeTokenException, KindeRetrieveException
+from kinde_sdk.kinde_api_client import KindeApiClient, GrantType
 from kinde_sdk import __version__
 
 class TestKindeApiClient(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestKindeApiClient(unittest.TestCase):
 
     def test_initialization_invalid_grant_type(self):
         with self.assertRaises(ValueError):
-            client = self._create_kinde_client("INVALID_GRANT")
+            self._create_kinde_client("INVALID_GRANT")
 
     def test_get_login_url(self):
         client = self._create_kinde_client(GrantType.AUTHORIZATION_CODE)
